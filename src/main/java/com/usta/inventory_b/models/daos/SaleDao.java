@@ -15,5 +15,8 @@ public interface SaleDao extends JpaRepository<SaleEntity, Long> {
     WHERE v.idVenta=?1
 
 """)
-    Optional<SaleEntity> findByIdVenta(Long idVenta);
+    Optional<SaleEntity> viewDetail(Long idVenta);
+
 }
+
+

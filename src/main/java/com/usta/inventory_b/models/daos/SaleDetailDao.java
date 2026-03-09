@@ -10,7 +10,6 @@ import java.util.List;
 public interface SaleDetailDao extends JpaRepository<SaleDetailEntity, Long> {
 
     List<SaleDetailEntity> findByVenta_IdVenta(Long idVenta);
-
     List<SaleDetailEntity> findByProducto_IdProd(Long idProd);
 
 }
