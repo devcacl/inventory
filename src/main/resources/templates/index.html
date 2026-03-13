@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head th:replace="layout/layout :: head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,11 @@
         background-position:center;
         background-repeat:no-repeat;
         background-attachment:fixed;'">
+
+
+     <div class="flex min-h-screen">
+         <aside th:replace="layout/layout :: sidebar"></aside>
+     </div>
 
 </body>
 </html>
